@@ -2,9 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <Authors>ashisa</Authors>
-    <Company>ohdevops8bf</Company>
-    <RepositoryUrl>https://github.com/ohdevops8bf/ohdevops</RepositoryUrl>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
