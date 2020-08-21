@@ -19,6 +19,8 @@ jobs:
         dotnet-version: 3.1.301
     - name: Install dependencies
       run: dotnet restore
+    - name: Run a multi-line script
+      run: ls -lR
     - name: Build
       run: dotnet build ./apis/poi/poi.sln --configuration Release --no-restore
     - name: Test
