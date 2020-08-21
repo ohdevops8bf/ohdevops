@@ -21,8 +21,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.1.809
-    - name: Run a multi-line script
-      run: find . -name "*.nupkg"
     - name: Install dependencies
       run: dotnet restore ./apis/poi/poi.sln
     - name: Build
@@ -36,6 +34,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.DEVOPS_TOKEN }}
       with:
         filename: .github/CREATE_ISSUE.md
+    - name: Run a multi-line script
+      run: find . -name "*.nupkg"
     - name: Package
       run: dotnet pack  ./apis/poi/poi.sln --configuration Release
     - name: Publish
