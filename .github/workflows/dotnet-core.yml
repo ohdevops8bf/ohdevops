@@ -22,7 +22,7 @@ jobs:
       with:
         dotnet-version: 2.1.809
     - name: Run a multi-line script
-      run: echo test command
+      run: echo test command line
     - name: Install dependencies
       run: dotnet restore ./apis/poi/poi.sln
     - name: Build
