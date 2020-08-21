@@ -20,7 +20,7 @@ jobs:
     - name: Setup .NET Core 2.1
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 2.1.0
+        dotnet-version: 2.1.809
     - name: Run a multi-line script
       run: echo test
     - name: Install dependencies
