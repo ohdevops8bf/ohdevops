@@ -28,5 +28,7 @@ jobs:
     - name: Status Check
       if: ${{ failure() }}
       uses: JasonEtco/create-an-issue@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.DEVOPS_TOKEN }}
       with:
         filename: .github/CREATE_ISSUE.md
