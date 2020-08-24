@@ -7,7 +7,6 @@
     <Authors>ashisa</Authors>
     <Company>ohdevops8bf</Company>
     <PackageDescription>Poi project</PackageDescription>
-    <RepositoryUrl>https://github.com/ohdevops8bf/ohdevops</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
